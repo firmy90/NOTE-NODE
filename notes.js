@@ -27,6 +27,7 @@ module.exports.addNote = () => {
   return `Nowa notatka \n`;
 };
 
-module.exports.add = (a,b) =>{
-    return a+b;
-}
+
+module.exports.add = (a, b) => {
+  return a + b;
+};
