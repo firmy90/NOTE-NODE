@@ -41,6 +41,13 @@ if (command === "add") {
 //   `Witaj ${user.username} !  Masz ${notes.age} lat.\n`
 // );
 
+// // fs.appendFile('powitanie.txt', "Hello JS"); // deprecated max v.10
+// fs.appendFile("powitanie.txt", "Hello World from JS!", function (err) {
+//     if (err) {
+//       console.log("Problem z dostępem do pliku");
+//     }
+//   });
+
 // let res = notes.addNote();
 // console.log(res);
 
