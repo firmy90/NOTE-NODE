@@ -32,4 +32,16 @@ console.log("Yargs: ", argv2);
 if (command === "add") {
   console.log("Dodawanie nowej notatki");
   notes2.addNoteWithBodyAndTitle(argv2.title, argv2.body);
+} else if (command === "list") {
+  console.log("Listowanie notatek");
+  notes2.getAll();
+} else if (command === "remove") {
+  console.log("Usuwanie notatki");
+  notes2.removeNote(argv2.title);
+} else if (command === "read") {
+  console.log("Czytanie notatek");
+  notes2.getNote(argv2.title);
+} else {
+  console.log("Nierozpoznana komenda");
 }
+//javascript@java:~/Documents/JavaScriptXL/NOTE-NODE$ node app3-yargs.js remove --title "My new title" --body "Message in body"
